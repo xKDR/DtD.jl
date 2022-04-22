@@ -1,0 +1,7 @@
+name = "DtD"
+uuid = "620a49e7-8616-4433-bb70-8bd2d50b6aa2"
+authors = ["Finance Research Group", "xKDR", "Ayush Patnaik"]
+version = "0.1.0"
+
+[compat]
+julia = "1"
