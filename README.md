@@ -3,7 +3,7 @@
 [![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://xKDR.github.io/DtD.jl/dev)
 ![Build Status](https://github.com/xKDR/DtD.jl/actions/workflows/ci.yml/badge.svg)
 ![Build Status](https://github.com/xKDR/DtD.jl/actions/workflows/documentation.yml/badge.svg)
-[![codecov](https://codecov.io/gh/xKDR/DtD}.jl/branch/main/graph/badge.svg?token=<token>)](https://codecov.io/gh/xKDR/DtD}.jl)
+[![codecov](https://codecov.io/gh/xKDR/DtD.jl/branch/main/graph/badge.svg?token=TCkDWBCTiB)](https://codecov.io/gh/xKDR/DtD.jl)
 
 DtD is calculated as the difference between the market value of the assets of the firm and the face value of its debt, scaled by the standard deviation of the firm's asset value. While the face value of the debt of the firm is known, the market value of the assets is not.
 
