@@ -58,3 +58,7 @@ BenchmarkTools.Trial: 10000 samples with 1 evaluation.
 ```
 
 Distance to default is calculated in the innermost loops of programs. The Julia code being over 11 times faster can significantly speed up a program. 
+
+# Support
+
+We gratefully acknowledge the JuliaLab at MIT for financial support for this project.
