@@ -7,16 +7,16 @@
 
 DtD is calculated as the difference between the market value of the assets of the firm and the face value of its debt, scaled by the standard deviation of the firm's asset value. While the face value of the debt of the firm is known, the market value of the assets is not.
 
-Exploiting the option nature of equity as a European call option on the underlying assets of a firm, the Merton Model (1974) derives the implied market value of the firm's assets and its volatility by solving the Black-Scholes (BS) equation backwards. 
+Exploiting the option nature of equity as a European call option on the underlying assets of a firm, the Merton Model (1974)[^1] derives the implied market value of the firm's assets and its volatility by solving the Black-Scholes (BS) equation backwards. 
 
 The dtd function of the package implements the Merton Model to compute a measure of credit risk of a firm: Distance to default (DtD). DtD indicates how many standard deviations is a firm away from the default point.
 
 The dtd function in this package is a translated into Julia by looking at the [dtd function from ifrogs package in R](https://https://github.com/ifrogs/ifrogs/blob/master/R/dtd.R)
 
-# To install:
+## To install:
     add "https://github.com/xKDR/DtD.jl.git"
 
-# Basic usage:
+## Basic usage:
 ```julia
 using DtD
 marketcap = 100 # market capital of the firm
@@ -27,7 +27,7 @@ r = 0.1 # annualized risk free interest rate.
 dtd(marketcap, debt, vol, r) 
 ```
 
-# Performance:
+## Performance:
 
 We will benchmark the example shown above in R and Julia. 
 
@@ -59,6 +59,9 @@ BenchmarkTools.Trial: 10000 samples with 1 evaluation.
 
 Distance to default is calculated in the innermost loops of programs. The Julia code being over 11 times faster can significantly speed up a program. 
 
-# Support
+## Support
 
 We gratefully acknowledge the JuliaLab at MIT for financial support for this project.
+
+## References
+[^1]: Merton, R. C. (1974). On the pricing of corporate debt: the risk structure of interest rates. The Journal of Finance, 29(2), 449–470
