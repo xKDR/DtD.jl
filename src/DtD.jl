@@ -1,4 +1,4 @@
-module DtD
+module MertonDtD
 
 using Distributions, Optim
 export dtd
