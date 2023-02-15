@@ -1,9 +1,9 @@
-# DtD
+# MertonDtD
 
-[![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://xKDR.github.io/DtD.jl/dev)
-![Build Status](https://github.com/xKDR/DtD.jl/actions/workflows/ci.yml/badge.svg)
-![Build Status](https://github.com/xKDR/DtD.jl/actions/workflows/documentation.yml/badge.svg)
-[![codecov](https://codecov.io/gh/xKDR/DtD.jl/branch/main/graph/badge.svg?token=TCkDWBCTiB)](https://codecov.io/gh/xKDR/DtD.jl)
+[![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://xKDR.github.io/MertonDtD.jl/dev)
+![Build Status](https://github.com/xKDR/MertonDtD.jl/actions/workflows/ci.yml/badge.svg)
+![Build Status](https://github.com/xKDR/MertonDtD.jl/actions/workflows/documentation.yml/badge.svg)
+[![codecov](https://codecov.io/gh/xKDR/MertonDtD.jl/branch/main/graph/badge.svg?token=TCkDWBCTiB)](https://codecov.io/gh/xKDR/MertonDtD.jl)
 
 DtD is calculated as the difference between the market value of the assets of the firm and the face value of its debt, scaled by the standard deviation of the firm's asset value. While the face value of the debt of the firm is known, the market value of the assets is not.
 
@@ -14,11 +14,11 @@ The dtd function of the package implements the Merton Model to compute a measure
 The dtd function in this package is a translated into Julia by looking at the [dtd function from ifrogs package in R](https://https://github.com/ifrogs/ifrogs/blob/master/R/dtd.R)
 
 ## To install:
-    add "https://github.com/xKDR/DtD.jl.git"
+    add "https://github.com/xKDR/MertonDtD.jl.git"
 
 ## Basic usage:
 ```julia
-using DtD
+using MertonDtD
 marketcap = 100 # market capital of the firm
 debt = 70 # threshold level of debt for the firm below which the firm will default
 vol = 0.3 # equity volatility 
@@ -45,7 +45,7 @@ We will benchmark the example shown above in R and Julia.
 ```
 **Julia**
 ```julia
-using DtD
+using MertonDtD
 using BenchmarkTools
 @benchmark dtd(100, 70, 0.3, 0.1)
 ```
