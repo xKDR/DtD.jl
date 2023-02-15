@@ -1,7 +1,7 @@
-using DtD
+using MertonDtD
 using Test
 
-@testset "DtD.jl" begin
+@testset "MertonDtD.jl" begin
     tolerance = 1.0e-5
 
     x = dtd(100, 70, 0.3, 0.1) 
