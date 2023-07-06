@@ -11,7 +11,7 @@ Exploiting the option nature of equity as a European call option on the underlyi
 
 The dtd function of the package implements the Merton Model to compute a measure of credit risk of a firm: Distance to default (DtD). DtD indicates how many standard deviations is a firm away from the default point.
 
-The dtd function in this package is a translated into Julia by looking at the [dtd function from ifrogs package in R](https://https://github.com/ifrogs/ifrogs/blob/master/R/dtd.R)
+The dtd function in this package is a translated into Julia by looking at the [dtd function from ifrogs package in R](https://github.com/ifrogs/ifrogs/blob/master/R/dtd.R)
 
 ## To install:
     add "https://github.com/xKDR/DtD.jl.git"
