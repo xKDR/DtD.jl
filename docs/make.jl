@@ -1,16 +1,16 @@
-using DtD
+using MertonDtD
 using Documenter
 
-DocMeta.setdocmeta!(DtD, :DocTestSetup, :(using DtD); recursive=true)
+DocMeta.setdocmeta!(MertonDtD, :DocTestSetup, :(using MertonDtD); recursive=true)
 
 makedocs(;
-    modules=[DtD],
+    modules=[MertonDtD],
     authors="xKDR Forum",
-    repo="https://github.com/xKDR/DtD.jl/blob/{commit}{path}#{line}",
-    sitename="$DtD.jl",
+    repo="https://github.com/xKDR/MertonDtD.jl/blob/{commit}{path}#{line}",
+    sitename="$MertonDtD.jl",
     format=Documenter.HTML(;
         prettyurls=get(ENV, "CI", "false") == "true",
-        canonical="https://xKDR.github.io/DtD.jl",
+        canonical="https://xKDR.github.io/MertonDtD.jl",
         assets=String[],
     ),
     pages=[
@@ -19,7 +19,7 @@ makedocs(;
 )
 
 deploydocs(;
-    repo="github.com/xKDR/DtD.jl",
+    repo="github.com/xKDR/MertonDtD.jl",
     target = "build",
     devbranch="main"
 )
